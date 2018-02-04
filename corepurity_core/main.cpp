@@ -11,6 +11,9 @@ int main()
     glClearColor(0.2f, 0.3f, 0.8f, 0.0f);
 
     vec2 vector(1.0f, 2.0f);
+
+    mat4 position = mat4::translation(vec3(2, 3, 4));
+    position *= mat4::identity();
     
     std::cout << vector << std::endl;
 

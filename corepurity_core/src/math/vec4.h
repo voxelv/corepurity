@@ -1,5 +1,5 @@
-#ifndef COREPURITY_MATH_VEC2_H
-#define COREPURITY_MATH_VEC2_H
+#ifndef COREPURITY_MATH_VEC4_H
+#define COREPURITY_MATH_VEC4_H
 
 #include <iostream>
 
@@ -40,5 +40,5 @@ namespace corepurity_core { namespace math {
 } }
 
 
-#endif//COREPURITY_MATH_VEC2_H
+#endif//COREPURITY_MATH_VEC4_H
 
