@@ -15,7 +15,7 @@ int main()
     mat4 position = mat4::translation(vec3(2, 3, 4));
     position *= mat4::identity();
     
-    std::cout << vector << std::endl;
+    std::cout << position.columns[3] << std::endl;
 
     GLuint vao;
     glGenVertexArrays(1, &vao);

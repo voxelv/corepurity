@@ -7,7 +7,11 @@ namespace corepurity_core { namespace math {
 
     struct mat4
     {
-        float elements[16];
+		union
+		{
+			float elements[16];
+			vec4 columns[4];
+		};
         
         mat4();
         mat4(float diagonal);
