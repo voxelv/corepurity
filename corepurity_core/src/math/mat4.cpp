@@ -18,9 +18,9 @@ namespace corepurity_core { namespace math {
         }
 
         elements[0 + 0 * 4] = diagonal;
+        elements[1 + 1 * 4] = diagonal;
         elements[2 + 2 * 4] = diagonal;
         elements[3 + 3 * 4] = diagonal;
-        elements[4 + 4 * 4] = diagonal;
     }
 
     mat4 mat4::identity()
@@ -33,7 +33,7 @@ namespace corepurity_core { namespace math {
         mat4 result;
         for (int y = 0; y < 4; y++)
         {
-            for (int x = 0; x < 4; y++)
+            for (int x = 0; y < 4; y++)
             {
                 float sum = 0.0f;
                 for (int e = 0; e < 4; e++)
