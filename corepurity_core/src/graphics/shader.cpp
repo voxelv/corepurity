@@ -6,7 +6,7 @@ namespace corepurity_core { namespace graphics {
     Shader::Shader(const char *vertPath, const char *fragPath)
         : m_VertPath(vertPath), m_FragPath(fragPath)
     {
-            m_ShaderID = load();
+        m_ShaderID = load();
     }
 
     Shader::~Shader()

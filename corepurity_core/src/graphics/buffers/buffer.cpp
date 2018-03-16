@@ -9,7 +9,7 @@ namespace corepurity_core { namespace graphics {
         glGenBuffers(1, &m_BufferID);
         glBindBuffer(GL_ARRAY_BUFFER, m_BufferID);
         glBufferData(GL_ARRAY_BUFFER, count * sizeof(GLfloat), data, GL_STATIC_DRAW);
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        glBindBuffer(GL_ARRAY_BUFFER, GL_ZERO);
     }
 
     void Buffer::bind() const
@@ -19,7 +19,7 @@ namespace corepurity_core { namespace graphics {
 
     void Buffer::unbind() const
     {
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        glBindBuffer(GL_ARRAY_BUFFER, GL_ZERO);
     }
 
 } }
