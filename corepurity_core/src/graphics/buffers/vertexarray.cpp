@@ -30,12 +30,12 @@ namespace corepurity_core { namespace graphics {
 
     }
 
-    void VertexArray::bind()
+    void VertexArray::bind() const
     {
         glBindVertexArray(m_ArrayID);
     }
 
-    void VertexArray::unbind()
+    void VertexArray::unbind() const
     {
         glBindVertexArray(0);
     }
