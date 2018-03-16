@@ -98,14 +98,14 @@ int main()
         ibo.bind();
         shader.setUniformMat4("ml_matrix", mat4::translation(vec3(4, 3, 0)));
         glDrawElements(GL_TRIANGLES, ibo.getCount(), GL_UNSIGNED_SHORT, 0);
-        ibo.bind();
+        ibo.unbind();
         sprite1.unbind();
 
         sprite2.bind();
         ibo.bind();
         shader.setUniformMat4("ml_matrix", mat4::translation(vec3(0, 0, 0)));
         glDrawElements(GL_TRIANGLES, ibo.getCount(), GL_UNSIGNED_SHORT, 0);
-        ibo.bind();
+        ibo.unbind();
         sprite2.unbind();
 #endif
         window.update();
